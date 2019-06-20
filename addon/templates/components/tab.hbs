@@ -1,0 +1,11 @@
+<div
+  id={{this.tabId}}
+  aria-selected={{this.selected}}
+  data-role="heading"
+  data-tab="true"
+  selected={{this.selected}}
+  {{on "click" this.tabClick}}
+  ...attributes
+>
+  {{yield}}
+</div>
