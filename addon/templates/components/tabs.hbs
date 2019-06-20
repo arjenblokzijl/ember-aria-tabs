@@ -1,0 +1,18 @@
+<div
+  id={{this.tabsId}}
+  {{did-insert (action this.didInsertTabs)}}
+  {{did-update (action this.didUpdateTabs)}}
+  ...attributes
+>
+  {{yield
+    (hash
+      tab=(component "tab"
+        selectedTabId=this.selectedTabId
+        onTabClick=(action this.onTabClick)
+      )
+      panel=(component "panel"
+        selectedPanelId=this.selectedPanelId
+      )
+    )
+  }}
+</div>
