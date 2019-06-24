@@ -1,7 +1,9 @@
-ember-tabs
+ember-aria-tabs
 ==============================================================================
 
-[Short description of the addon.]
+This addon is inspired by the _howto-tabs_ from the [howto-components](https://github.com/GoogleChromeLabs/howto-components) repository of _Goolge Chrome Labs_.
+
+It is purposely made without any css at all.
 
 
 Compatibility
@@ -15,15 +17,26 @@ Compatibility
 Installation
 ------------------------------------------------------------------------------
 
-```
-ember install ember-tabs
+```console
+ember install ember-aria-tabs
 ```
 
 
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+Simple example with inline styles:
+
+```hbs
+<Tabs style="display: flex; flex-wrap: wrap;" as |t|>
+  <t.tab style="padding: 5px 10px;">one tab</t.tab>
+  <t.panel style="flex-basis: 100%; order: 99999; padding: 5px 10px;">one panel</t.panel>
+  <t.tab style="padding: 5px 10px;">two tab</t.tab>
+  <t.panel style="flex-basis: 100%; order: 99999; padding: 5px 10px;">two panel</t.panel>
+  <t.tab style="padding: 5px 10px;">three tab </t.tab>
+  <t.panel style="flex-basis: 100%; order: 99999; padding: 5px 10px;">three panel</t.panel>
+</Tabs>
+```
 
 
 Contributing
